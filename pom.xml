@@ -55,7 +55,7 @@
   </contributor>
 </contributors>
 	<properties>
-		<main-class>domains</main-class>
+		<main-class>TryRenjin</main-class>
 		<license.licenseName>MIT</license.licenseName>
 		<license.copyrightOwners>N/A</license.copyrightOwners>
 		<license.projectName>Testing renjin for future apps</license.projectName>
