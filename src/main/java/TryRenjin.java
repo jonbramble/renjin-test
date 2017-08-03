@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ListIterator;
 
 import javax.script.*;
@@ -133,9 +134,15 @@ public class TryRenjin {
 			e.printStackTrace();
 		   }
 		}
+			
+		//allocate data for the columns - can we use reflection here to create these arrays
+		// Class<?> c = Class.forName("java.lang.Double"); 
+		// or interate over cols and rows
+		String[] namedat = new String[rows];
+		Double[] popdat = new Double[rows];
 				
-		engine.put("namecol", table.get(0).toArray(new String[rows]) );
-		engine.put("popcol", table.get(1).toArray(new Double[rows]) );
+		engine.put("namecol", table.get(0).toArray(namedat));
+		engine.put("popcol", table.get(1).toArray(popdat));
 		engine.put("filename", filename);
 
 		try {
@@ -147,7 +154,7 @@ public class TryRenjin {
 			e.printStackTrace();
 		}
 		
-		System.out.print("Written Files");
+		System.out.print("Written RData Files");
 	
 	}
 }
