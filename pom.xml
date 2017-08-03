@@ -68,8 +68,16 @@
   		<artifactId>renjin-script-engine</artifactId>
   		<version>0.8.2413</version>
   	</dependency>
+  	<dependency>
+  		<groupId>net.imagej</groupId>
+  		<artifactId>imagej</artifactId>
+  	</dependency>
   </dependencies>
   <repositories>
+   <repository>
+	<id>imagej.public</id>
+	<url>http://maven.imagej.net/content/groups/public</url>
+   </repository>
   <repository>
     <id>bedatadriven</id>
     <name>bedatadriven public repo</name>
