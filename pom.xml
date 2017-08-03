@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.scijava</groupId>
+    <artifactId>pom-scijava</artifactId>
+    <version>16.2.0</version>
+  </parent>
+  <groupId>org.capitals-programme</groupId>
+  <artifactId>renjin-test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>a test of renjin with scijava</name>
+  <organization>
+  	<name>capitals-programme</name>
+  </organization>
+    	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	  <scm>
+  	<url>http://github.com/jonbramble/renjin-test</url>
+  	<connection>git@github.com:jonbramble/renjin-test</connection>
+  	<developerConnection>jonbramble</developerConnection>
+  </scm>
+  <description>Test program for renjin</description>
+  <url>None</url>
+  <inceptionYear>2017</inceptionYear>
+  <issueManagement>
+  	<system>None</system>
+  </issueManagement>
+  <ciManagement>
+  	<system>None</system>
+  </ciManagement>
+  <mailingLists>
+  <mailingList>
+    <name>None</name>
+  </mailingList>
+  </mailingLists>
+   <developers>
+  <developer>
+   <name> Jonathan Bramble </name>
+   <id>jonbramble</id>
+   <url>http://github.com/jonbramble</url>
+  </developer>
+ </developers>
+   <contributors>
+  <!--
+  NB: Need at least one element to override the parent.
+  See: https://issues.apache.org/jira/browse/MNG-5220
+  -->
+  <contributor>
+    <name>None</name>
+  </contributor>
+</contributors>
+	<properties>
+		<main-class>domains</main-class>
+		<license.licenseName>MIT</license.licenseName>
+		<license.copyrightOwners>N/A</license.copyrightOwners>
+		<license.projectName>Testing renjin for future apps</license.projectName>
+	</properties>
+
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.renjin</groupId>
+  		<artifactId>renjin-script-engine</artifactId>
+  		<version>0.8.2413</version>
+  	</dependency>
+  </dependencies>
+  <repositories>
+  <repository>
+    <id>bedatadriven</id>
+    <name>bedatadriven public repo</name>
+    <url>https://nexus.bedatadriven.com/content/groups/public/</url>
+  </repository>
+</repositories>
+</project>
