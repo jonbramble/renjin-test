@@ -19,8 +19,8 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	  <scm>
-  	<url>http://github.com/jonbramble/renjin-test</url>
+  <scm>
+  	<url>scm::git::ssh://github.com/jonbramble/renjin-test</url>
   	<connection>git@github.com:jonbramble/renjin-test</connection>
   	<developerConnection>jonbramble</developerConnection>
   </scm>
